@@ -1,0 +1,254 @@
+/*
+ *
+ * Hope
+ *
+ */
+
+import React from 'react';
+import Helmet from 'react-helmet';
+import {Link} from "react-router";
+import AppBar from 'material-ui/AppBar';
+import Responsive from 'react-responsive';
+
+
+export default class Home extends React.PureComponent {
+  render() {
+
+
+
+  const mainHeadContainer={
+        width:"100%",
+        height:"200px",
+        backgroundColor:"#000000",
+        display:"flex",
+        flexDirection:"row"
+}
+      const maxWidth1={
+            width:"5000px",
+            height:"100%",
+            display:"flex",
+            flexDirection:"column",
+            backgroundColor:"#ff5600"
+}
+          const h1Cont={
+                maxWidth:"100%",
+                height:"70%",
+                display:"flex",
+                flexDirection:"row",
+                backgroundColor:"#45ff00"
+}
+
+              const h1sign={
+                    width:"25%",
+                    display:"flex",
+                    flexDirection:"row",
+                    backgroundColor:"#663300"
+}
+
+                    const h1sign1={
+                          width:"50%",
+                          height:"100%",
+
+}
+                    const h1sign2={
+                          width:"50%",
+                          height:"100%",
+}
+              const h1name={
+                    width:"50%",
+                    backgroundColor:"#66ff22"
+}
+              const h1call={
+                    width:"25%",
+                    align:"right",
+                    display:"flex",
+                    flexDirection:"column",
+                    backgroundColor:"#666622"
+
+}
+                    const h1CallCol1={
+                          width:"100%",
+                          height:"50%",
+
+}
+                    const h1CallCol2={
+                          width:"100%",
+                          height:"50%",
+                          display:"flex",
+                          flexDirection:"row",
+
+}
+                          const h1CallCol2L={
+                                width:"50%",
+                                alignSelf:"flex-start"
+
+
+}
+                          const h1CallCol2R={
+                                width:"50%",
+                                alignSelf:"flex-end",
+
+}
+
+      const h2headlinks={
+            textAlign:"center",
+            display:"flex",
+            flexDirection:"row",
+            height:"30%",
+            maxWidth:"1000px",
+            backgroundColor:"#333300"
+
+}
+
+    const h3Img={
+          width:"100%",
+          height:"60%",
+}
+
+          const h3ImgText={
+                width:"30%",
+                align:"center",
+                textAlign:"center",
+                backgroundColor:"#66ff00"
+}
+
+    const maxWidth2={
+          display:"flex",
+          flexDirection:"row",
+          width:"2773px",
+          height:"400px",
+          backgroundColor:"#33220"
+
+}
+          const bodSearch={
+                height:"35%",
+                width:"100%",
+                display:"flex",
+                flexDirection:"row",
+                backgroundColor:"#968522"
+}
+
+                const bodSearchtype={
+                      width:"60%",
+                      align:"left",
+
+}
+                const bodSearchgo={
+                      width:"40%",
+                      align:"right",
+                      display:"flex",
+                      flexDirection:"row",
+}
+                      const bodSearchgocheckin={
+                            width:"33%",
+
+}
+                      const bodSearchgocheckout={
+                            width:"33%",
+
+}
+                      const bodSearchgosearch={
+                            width:"33%",
+
+}
+
+          const bodHeadFiller={
+                width:"100%",
+                height:"65%",
+                display:"flex",
+                flexDirection:"row",
+
+      }
+                const bodHeadFillerL={
+                      width:"33%",
+                      textAlign:"center",
+
+        }
+                const bodHeadFillerM={
+                      width:"33%",
+                      textAlign:"center",
+
+        }
+                const bodHeadFillerR={
+                      width:"33%",
+                      textAlign:"center",
+                      
+        }
+
+    const footStyle={
+      width:"100%"
+    }
+
+    return (
+
+    <div>
+     <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
+
+  <header style={mainHeadContainer}>
+        <div style={maxWidth1}>
+              <div style={h1sign}>
+                <div style={h1sign1}> signin </div>
+                <div style={h1sign2}> join </div>
+              </div>
+
+              <div style={h1name}> name </div>
+
+
+              <div style={h1call}>
+                <div style={h1CallCol1}> call us </div>
+
+                <div style={h1CallCol2}>
+                    <div style={h1CallCol2L}> sharebtn </div>
+                    <div style={h1CallCol2R}> contactbtn </div>
+                </div>
+              </div>
+
+          <div style={h2headlinks}> row of eight list </div>
+        </div>
+
+      <div style={h3Img}>
+          <div style={h3ImgText}>txt overlay image</div>
+      </div>
+
+  </header>
+
+
+
+  <div style={maxWidth2}>
+    <div style={bodSearch}>
+
+        <div style={bodSearchtype}>search area</div>
+
+        <div style={bodSearchgo}>
+          <div style={bodSearchgocheckin}>check in</div>
+
+          <div style={bodSearchgocheckout}> check out </div>
+
+          <div style={bodSearchgosearch}>search</div>
+        </div>
+
+    </div>
+
+    <div style={bodHeadFiller}>
+        <div style={bodHeadFillerL}>words</div>
+
+        <div style={bodHeadFillerM}>words</div>
+
+        <div style={bodHeadFillerR}>words</div>
+    </div>
+  </div>
+
+
+
+  <footer style={footStyle}>
+
+    <nav>
+      <Link to="/"> Home </Link><hr></hr>
+    </nav>
+  </footer>
+
+  </div>
+
+    );
+  }
+}
