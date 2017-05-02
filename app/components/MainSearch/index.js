@@ -59,7 +59,7 @@ class MainSearch extends React.PureComponent {
     var _this = this;
     setInterval(function(){
       if(_this.state.active == _this.state.slides.length-1){
-        
+
       }
     })
   }
