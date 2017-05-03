@@ -21,11 +21,11 @@ import MTrend from 'components/MTrend';
 import Mtrend2 from 'components/Mtrend2';
 
 import MtrendMobile from 'components/MtrendMobile';
-import MTMFillMobile2 from 'components/MTMFillMobile/MTMFillMobile2';
+import MTMFillMobile2 from 'components/MTMFillMobile2';
 import Mt2Mobile from 'components/Mt2Mobile';
 
 import Footer from 'components/Footer';
-import FooterMobile from 'components/FooterMobile';
+
 import TextField from 'material-ui/TextField';
 
 

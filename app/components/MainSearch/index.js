@@ -159,6 +159,8 @@ class MainSearch extends React.PureComponent {
       width:"30%",
       textAlign:"center",
       background:"rgba(255,255,255,0)",
+      lineHeigt:".05em",
+      marginTop:"-20px"
 
     }
     const spaceFiller={
@@ -172,7 +174,7 @@ class MainSearch extends React.PureComponent {
       hoverColor:"rgba(20,192,11,1)", // Why wont this work as SearchIcon style instead of inline override, How to INCREASE SIZE
     }
     const pFill={
-      lineHeigt:".1em",
+      lineHeigt:".05em",
       fontSize:"1em",
       fontWeight:"bold",
       fontVariant:"small-caps",

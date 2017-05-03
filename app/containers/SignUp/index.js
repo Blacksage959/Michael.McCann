@@ -53,7 +53,7 @@ export default class SignUp extends React.PureComponent {
 
 
 
-    fetch("http://localhost:8000/api/signup",{
+    fetch("http://owlversee.com/api/signup",{
       method:"post",
       body:data
 

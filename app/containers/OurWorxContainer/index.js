@@ -10,7 +10,7 @@ import Header from 'components/Header';
 import Responsive from 'react-responsive';
 import HeaderMobile from 'components/HeaderMobile';
 import Footer from 'components/Footer';
-import FooterMobile from 'components/FooterMobile';
+
 import DonateAside from 'components/DonateAside';
 
 export default class OurWorxContainer extends React.PureComponent {
@@ -23,7 +23,7 @@ export default class OurWorxContainer extends React.PureComponent {
   }
 
   componentWillMount(){
-    fetch("http://localhost:8000/api/getArticles")
+    fetch("http://owlversee.com/api/getArticles")
     .then(function(response){
       return response.json();
     })

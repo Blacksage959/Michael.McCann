@@ -10,7 +10,7 @@ import Header from 'components/Header';
 import Responsive from 'react-responsive';
 import HeaderMobile from 'components/HeaderMobile';
 import Footer from 'components/Footer';
-import FooterMobile from 'components/FooterMobile';
+
 import DonateAside from 'components/DonateAside';
 
 export default class Yourworxyourworx extends React.PureComponent {
@@ -30,7 +30,7 @@ export default class Yourworxyourworx extends React.PureComponent {
   }
 
   componentWillMount(){
-    fetch("http://localhost:8000/api/getPost")
+    fetch("http://owlversee.com/api/getPost")
     .then(function(response){
       return response.json();
     })
@@ -79,7 +79,7 @@ export default class Yourworxyourworx extends React.PureComponent {
       data.append("body",this.state.body);
       data.append("image",this.state.image);
 
-      fetch("http://localhost:8000/api/storePost?token="+this.state.token,{
+      fetch("http://owlversee.com/api/storePost?token="+this.state.token,{
         method:"post",
         body:data
 
@@ -133,7 +133,7 @@ export default class Yourworxyourworx extends React.PureComponent {
     const mainImg2={
       width:"100%",
       height:"auto",
-      minHeight:"275px",
+      minHeight:"400px",
 
     }
     const imgText={
@@ -191,7 +191,7 @@ export default class Yourworxyourworx extends React.PureComponent {
       marginLeft:"auto",
       marginRight:"auto",
       width:"80%",
-      marginTop:"10px",
+      marginTop:"50px",
       marginBottom:"20px",
       maxWidth:"600px",
       maxHeight:"600px",
@@ -271,10 +271,17 @@ export default class Yourworxyourworx extends React.PureComponent {
     const articleWords={
       width:"45%",
       minHeight:"280px",
+      maxHeight:"280px",
       background:"radial-gradient(rgba(150,255,150,1),rgba(100,255,100,1))",
       margin:"auto",
-      padding:"10px",
+      padding:"auto",
       borderRadius:"5px",
+      overflow:"hidden",
+      color:"rgba(40,175,40,1)",
+      fontSize:"1.1em",
+      fontFamily:"Lato",
+      fontVariant:"none",
+
     }
 
     const articleImg2={
@@ -420,7 +427,8 @@ export default class Yourworxyourworx extends React.PureComponent {
       color:"rgba(40,175,40,1)",
       fontSize:"1.1em",
       fontFamily:"Lato",
-      fontVariant:"none"
+      fontVariant:"none",
+      padding:"5px"
     }
 
     const aboutPoints2={
@@ -456,7 +464,7 @@ export default class Yourworxyourworx extends React.PureComponent {
                     {this.state.posts.map((post, index) => (
                       <div style={articleBlock}>
                         <img style={articleImg} src={post.image}/>
-                        <div style={articleWords}><h3 style={aboutPoints}>{post.title}</h3><p style={aboutPoints1}>{post.body}</p></div>
+                        <div style={articleWords}><h3>{post.title}</h3><p>{post.body}</p></div>
                       </div>
                     ))}
                 </div>

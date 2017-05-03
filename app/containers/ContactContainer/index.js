@@ -43,7 +43,7 @@ export default class ContactContainer extends React.PureComponent {
 
 
 
-    fetch("http://localhost:8000/api/storeContact",{
+    fetch("http://owlversee.com/api/storeContact",{
       method:"post",
       body:data
 

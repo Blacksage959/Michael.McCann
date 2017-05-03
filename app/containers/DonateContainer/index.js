@@ -43,7 +43,7 @@ export default class DonateContainer extends React.PureComponent {
 
 
 
-    fetch("http://localhost:8000/api/donate",{
+    fetch("http://owlversee.com/api/donate",{
       method:"post",
       body:data
 

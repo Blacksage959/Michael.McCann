@@ -15,7 +15,7 @@ class MtrendMobile extends React.PureComponent {
   }
 
   componentWillMount(){
-    fetch("http://localhost:8000/api/getArticles")
+    fetch("http://owlversee.com/api/getArticles")
     .then(function(response){
       return response.json();
     })

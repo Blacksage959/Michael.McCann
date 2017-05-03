@@ -17,7 +17,7 @@ class MTrend extends React.PureComponent {
   }
 
   componentWillMount(){
-    fetch("http://localhost:8000/api/getArticles")
+    fetch("http://owlversee.com/api/getArticles")
     .then(function(response){
       return response.json();
     })
@@ -81,7 +81,7 @@ class MTrend extends React.PureComponent {
     }
     const titleBlockBttmSeg={
       height:"100%",
-      width:"22.5%",
+      width:"35%",
       fontSize:"2em",
       fontWeight:"bold",
       fontVariant:"small-caps",
@@ -99,8 +99,8 @@ class MTrend extends React.PureComponent {
       display:"flex",
       flexDirection:"row",
       flexWrap:"wrap",
-      paddingLeft:"15%",
-      paddingRight:"15%",
+      paddingLeft:"1%",
+      paddingRight:"1%",
 
     }
 

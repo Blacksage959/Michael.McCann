@@ -89,7 +89,7 @@ class TopHeader extends React.PureComponent {
       textAlign:"center",
       width:"100%",
       height:"45%",
-      background:"rgba(255,255,255,0)",
+      backgroundImage:"FavoriteBorderIcon",
       fontSize:"1.2em",
       fontWeight:"bold",
       fontVariant:"small-caps",

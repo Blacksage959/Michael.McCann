@@ -54,7 +54,7 @@ export default class DashboardContainer extends React.PureComponent {
     data.append("body",this.state.body);
     data.append("image",this.state.image);
 
-    fetch("http://localhost:8000/api/storeArticle",{
+    fetch("http://owlversee.com/api/storeArticle",{
       method:"post",
       body:data
 
